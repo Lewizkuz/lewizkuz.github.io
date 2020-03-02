@@ -1,6 +1,6 @@
 function App(){
     return(
-        <>
+        <div class="App">
         <Header/>
         <Navbar/>
         <Article head='Article'>Big stuff going on!</Article>
@@ -10,7 +10,7 @@ function App(){
         <Footer>
             I am down here! where noone will see me for eternity
         </Footer>    
-        </>
+        </div>
     );
 }
  function Header() {
