@@ -53,3 +53,4 @@ function Navbar() {
         </nav>
     );
 }
+ReactDOM.render(App, document.getElementById('root'));
