@@ -1,8 +1,3 @@
-import Header from './Components/Header.js';
-import Navbar from './Components/Navbar.js';
-import Article from './Components/Article.js';
-import Aside from './Components/Aside.js';
-import Footer from './Components/Footer';
 export default function App(){
     return(
         <>
@@ -16,5 +11,45 @@ export default function App(){
             I am down here! where noone will see me for eternity
         </Footer>    
         </>
+    );
+}
+ function Header() {
+    return(
+        <header>
+            <h1>Title</h1>
+            <p>Subtitle</p>
+        </header>
+    );
+};
+function Article(props) {
+    return(
+        <article>
+            <h1>{props.head}</h1>
+            <p>{props.Children}</p>
+        </article>
+    );
+}
+function Aside(props) {
+    return(
+        <aside>
+            <p>This thing is at the side weirdly...</p>
+        </aside>
+    );
+     }
+function Navbar() {
+    navlinks = (
+        <>
+        <li><a href="NavLink">Link</a></li>
+        <li><a href="NavLink">Kink</a></li>
+        <li><a href="NavLink">Wink</a></li>
+        <li><a href="NavLink">Sink</a></li>
+        </>
+    )
+    return(
+        <nav>
+            <ul>
+                {navlinks}
+            </ul>
+        </nav>
     );
 }
