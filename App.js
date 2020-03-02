@@ -1,4 +1,4 @@
-export default function App(){
+function App(){
     return(
         <>
         <Header/>
